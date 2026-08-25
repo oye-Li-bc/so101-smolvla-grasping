@@ -82,8 +82,8 @@ bash scripts/deploy.sh
 
 ## 📦 模型与数据集
 
-- 数据集：v3 合并数据集（55 集）——本地 `~/.cache/huggingface/lerobot/oye-Li-bc/oye_tissue_v3_20260825_161500`，待上传 HuggingFace
-- 模型权重：`smolvla_v2` checkpoint（20,000 步）——本地 `~/output_lerobot_train/tissue/smolvla_v2`，待上传 HuggingFace
+- 数据集：`oye-Li-bc/oye_tissue_v3`（55 集 / 15,625 帧）→ [HuggingFace](https://huggingface.co/datasets/oye-Li-bc/oye_tissue_v3)
+- 模型权重：`oye-Li-bc/oye_tissue_smolvla`（20,000 步微调）→ [HuggingFace](https://huggingface.co/oye-Li-bc/oye_tissue_smolvla)
 
 ## 🧰 环境
 
