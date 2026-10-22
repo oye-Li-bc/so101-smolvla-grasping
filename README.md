@@ -1,6 +1,16 @@
-# so101-smolvla-grasping
+# SO-ARM101 · SmolVLA Grasping
+
+![SO-ARM101 · SmolVLA Grasping 项目封面](.github/readme/cover.svg)
+
+[![License: MIT](https://img.shields.io/badge/license-MIT-516d64)](LICENSE)
+![SMOLVLA](https://img.shields.io/badge/SMOLVLA-project-516d64)
+[![Portfolio](https://img.shields.io/badge/oye-portfolio-516d64)](https://oye-li-bc.github.io/)
 
 基于 SmolVLA（Vision-Language-Action Model）的机械臂抓取-放置系统，运行在 SO-ARM101 六自由度机械臂上，使用 LeRobot 框架完成从数据采集到真机部署的 **VLA 微调闭环**。
+
+**[演示效果](#demo) · [实验记录](#results) · [快速复现](#quickstart) · [技术文档](#docs)**
+
+<a id="demo"></a>
 
 ## 🎥 演示效果
 
@@ -11,6 +21,8 @@
 完整演示视频（三轮抓取）见 [GitHub Releases v1.0](https://github.com/oye-Li-bc/so101-smolvla-grasping/releases/tag/v1.0)：
 - 手机实拍（上帝视角）
 - 部署录屏（Rerun 可视化 + 终端日志）
+
+<a id="results"></a>
 
 ## 📊 成果概览
 
@@ -37,6 +49,8 @@ so101-smolvla-grasping/
 ├── data/          # 数据集说明（权重和数据集托管在 HuggingFace）
 └── assets/        # README 配图
 ```
+
+<a id="quickstart"></a>
 
 ## 🚀 快速复现
 
@@ -72,6 +86,8 @@ bash scripts/deploy.sh
 - **显存友好**：SmolVLA 默认冻结视觉编码器 + 只训动作专家，11.5GB 显卡可跑 batch=8，实测 ~3.8 step/s
 - **命令行的坑**：`--参数=~/路径` 中 `~` 不展开（用绝对路径）；`--policy.path` 与 `--policy.type` 不能同时给（0.6.1 校验）
 
+<a id="docs"></a>
+
 ## 📚 文档索引
 
 - [docs/01-项目概述.md](docs/01-项目概述.md)
@@ -94,3 +110,12 @@ bash scripts/deploy.sh
 ## 📄 License
 
 MIT
+
+## 同系列项目
+
+- [SO-ARM101 · ACT Grasping](https://github.com/oye-Li-bc/so101-act-grasping)
+- [SO-ARM101 · HIL-SERL Pushing](https://github.com/oye-Li-bc/so101-hilserl-pushing)
+
+---
+
+[个人作品集](https://oye-li-bc.github.io/) · [可编辑封面与配图说明](.github/readme/README.md)
